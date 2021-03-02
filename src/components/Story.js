@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Link = ({ url, title }) => (
-  <a href={url} target='_blank' rel='noreferrer'>
+  <a href={url} target="_blank" rel="noreferrer">
     {title}
   </a>
 );
 
-const Story = ({ story: { is, by, title, kids, time, url } }) => {
+const Story = ({ story: { id, by, title, kids, time, url } }) => {
   return (
     <div className="story">
       <div className="story-title">
